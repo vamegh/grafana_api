@@ -1,0 +1,32 @@
+---
+
+##  Test example of data to send through to grafana.
+
+grafana_details:
+  login_user: 'admin'
+  login_pass: 'admin'
+  host: '127.0.0.1'
+  port: '3000'
+
+databases:
+  collectd:
+    access: 'direct'
+    database: 'test'
+    name: 'test'
+    type: 'influxdb'
+    host: 'localhost'
+    port: '8000'
+    user: ''
+    password: ''
+    default: False
+  grafana:
+    access: 'direct'
+    database: 'test1'
+    name: 'test1'
+    type: 'influxdb'
+    host: 'localhost'
+    port: '8086'
+    user: ''
+    password: ''
+    default: 'True'
+
